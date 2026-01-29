@@ -4,6 +4,7 @@ class Utente:
     def __init__(self,nome):
         self.nome = nome
         self.numero_tessera = random.randint(10000000, 99999999)
+        self.libri_in_prestito = []
 
     def __repr__(self):
         return f"Utente(Nome={self.nome},numerotessera={self.numero_tessera})"
