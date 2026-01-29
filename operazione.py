@@ -4,6 +4,7 @@ class Operazione:
     def __init__(self,tipo):
         self.tipo = tipo
         self.data = datetime.now()
+        self.op = []
 
     def __repr__(self):
         return f"Operazione(Tipo={self.tipo},Data={self.data})"
